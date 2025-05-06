@@ -1,0 +1,43 @@
+.custom-input {
+  position: relative;
+  $root: &;
+
+  &__field {
+    border: 1px solid transparent;
+    background-color: rgba($color-jaguar, .05);
+    border-radius: 200px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    transition: border-color $transition-300, background-color $transition-300;
+
+    &::placeholder {
+      color: rgba($color-jaguar, 0.3);
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-deep-teal;
+      background-color: $color-ottoman;
+    }
+
+    &:invalid {
+      border-color: $color-orange-red;
+    }
+
+    &:invalid ~ #{$root}__error {
+      opacity: 1;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+    color: $color-orange-red;
+    opacity: 0;
+    transition: opacity $transition-300;
+  }
+}
