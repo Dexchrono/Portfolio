@@ -1,0 +1,30 @@
+.movieCardInfo {
+  padding: 40px 0;
+}
+
+.movieCardInfo__content {
+  display: flex;
+  flex-flow: column;
+  gap: 64px;
+}
+
+.movieCardInfo__title {
+  margin: 0;
+}
+
+.movieCardInfo__list {
+  display: inline-flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+.movieCardInfo__info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.movieCardInfo__info span {
+  width: 320px;
+}
