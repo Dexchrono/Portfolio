@@ -5,7 +5,7 @@ import MovieCard from "../MovieCard/MovieCard";
 import MovieCardInfo from "../MovieCardInfo/MovieCardInfo";
 
 const MovieAboutPageContent: FC<Pick<IMovie, "id">> = ({ id }) => {
-  const [data, setData] = useState<IMovie | undefined>(undefined);
+  const [data, setData] = useState<IMovie>();
 
   const getData = async (): Promise<void> => {
     const data = await Api.getMovie(id);

@@ -1,0 +1,43 @@
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background: #393b3c;
+}
+
+.dropdown__list {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.dropdown__link {
+  color: aliceblue;
+}
+
+.dropdown__card {
+  display: grid;
+  grid-template: 20px 24px / 40px 1fr;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.dropdown__picture {
+  grid-row: span 2;
+}
+
+.dropdown__heading {
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown__rating {
+  display: inline-block;
+}
+
+.dropdown__title {
+  margin: 0;
+}

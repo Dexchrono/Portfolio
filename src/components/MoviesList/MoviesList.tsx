@@ -6,7 +6,7 @@ import styles from "./MoviesList.module.css";
 
 const MoviesList = () => {
   const { genre } = useParams<{ genre: string }>();
-  const [data, setData] = useState<IMovie[] | undefined>([]);
+  const [data, setData] = useState<IMovie[]>([]);
 
   useEffect(() => {
     const getData = async (): Promise<void> => {

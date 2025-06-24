@@ -4,7 +4,7 @@ import Api from "../../api/api";
 import MovieCard from "../MovieCard/MovieCard";
 
 const RandomMovie: FC = () => {
-  const [data, setData] = useState<IMovie | undefined>(undefined);
+  const [data, setData] = useState<IMovie>();
 
   const getData = useCallback(async (): Promise<void> => {
     const data = await Api.getRandomMovie();

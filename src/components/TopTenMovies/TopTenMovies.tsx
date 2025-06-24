@@ -5,7 +5,7 @@ import { IMovie } from "../../types/Movie";
 import Api from "../../api/api";
 
 const TopTenMovies = () => {
-  const [data, setData] = useState<IMovie[] | undefined>(undefined);
+  const [data, setData] = useState<IMovie[]>([]);
 
   const getData = async (): Promise<void> => {
     const data = await Api.getTopTenMovies();

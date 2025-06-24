@@ -4,9 +4,7 @@ import { IMovie } from "../../types/Movie";
 import styles from "./GenresList.module.css";
 
 const GenresList = () => {
-  const [data, setData] = useState<Pick<IMovie, "genres">[] | undefined>(
-    undefined,
-  );
+  const [data, setData] = useState<Pick<IMovie, "genres">[]>([]);
 
   const getData = async (): Promise<void> => {
     const data = await Api.getMovieGenres();

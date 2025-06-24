@@ -80,6 +80,7 @@
 }
 
 .nav__search {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -94,6 +95,7 @@
   margin: 0;
   padding: 0;
   border: 0 none;
+  width: 100%;
   color: inherit;
   background-color: transparent;
 }
